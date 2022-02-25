@@ -12,9 +12,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-header {
+.header {
   background-color: var(--black);
   padding: 20px;
+  position: sticky;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .container {
