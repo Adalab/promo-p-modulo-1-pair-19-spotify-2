@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 :root {
   --blue: #2295f9;
   --green: #61de48;
@@ -70,7 +69,21 @@ body {
   color: var(--white);
   font-weight: bold;
 }
+/* styles sections */
 
+.subttitle {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.benefit-1 .benefit-2 .benefit-3 .benefit-4 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* styles  footer */
 .footer {
   background-color: var(--black);
   color: var(--white);
