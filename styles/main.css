@@ -72,15 +72,43 @@ body {
 /* styles sections */
 
 .subttitle {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
+  margin-top: 50px;
 }
 
-.benefit-1 .benefit-2 .benefit-3 .benefit-4 {
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+
+.benefits h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.benefits article {
+  flex: 100%;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.benefits article .content {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  flex-wrap: wrap;
+  margin-left: 25px;
+}
+
+.benefits article .imgContainer {
+  width: 30%;
+}
+
+.benefits article .imgContainer img {
+  width: 100px;
+  margin-left: 25px;
 }
 
 /* styles  footer */
