@@ -29,6 +29,15 @@ body {
   justify-content: space-between;
 }
 
+.hamburger_menu {
+  display: none;
+  color: var(--white);
+}
+
+.list-header {
+  display: none;
+}
+
 .main_home {
   display: flex;
   flex-direction: column;
@@ -69,6 +78,7 @@ body {
   color: var(--white);
   font-weight: bold;
 }
+
 /* styles sections */
 
 .subttitle {
@@ -79,6 +89,7 @@ body {
 }
 
 .benefits {
+  padding: 0 30px;
   display: flex;
   flex-wrap: wrap;
   font-size: 1rem;
@@ -145,4 +156,59 @@ body {
 
 .flag {
   width: 20px;
+}
+
+/* Tablet */
+
+@media all and (min-width: 780px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .list-header {
+    display: block;
+  }
+
+  .hamburger_menu {
+    display: flex;
+    flex-direction: row;
+    color: white;
+  }
+
+  .blue_header_home {
+    background-image: url(../img/premium_dancer.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+    background-size: contain;
+  }
+
+  .blue_header_home .button {
+    width: 250px;
+  }
+
+  .benefits article {
+    flex: 50%;
+  }
+}
+
+/* Desktop */
+
+@media all and (min-width: 1000px) {
+  .benefits article {
+    flex: 25%;
+  }
+
+  .benefits article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits article .content {
+    align-items: center;
+  }
+
+  .benefits article .content h3 {
+    text-align: center;
+  }
 }
